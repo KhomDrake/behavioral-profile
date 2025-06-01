@@ -1,6 +1,6 @@
 package br.com.cosmind.app.behavioralprofile.ui.features.test
 
-import androidx.compose.runtime.mutableStateListOf
+import android.util.Log
 import androidx.compose.runtime.toMutableStateList
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -59,8 +59,11 @@ class TestViewModel(
         timeJob?.cancel()
         timeJob = viewModelScope.launch {
             val page = getNextPageUseCase.invoke() ?: return@launch run {
+                val result = finishTestUseCase.invoke()
+                _state.update {
+                    it.copy(resultModel = result)
+                }
                 timeJob?.cancel()
-                finishTestUseCase.invoke()
             }
 
             val words = page.words.map { word ->

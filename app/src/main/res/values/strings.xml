@@ -1,6 +1,30 @@
 <resources>
     <string name="app_name">Behavioral Profile</string>
 
+    <!-- Dolphin -->
+    <string name="animal_dolphin_name">Dolphin</string>
+    <string name="animal_dolphin_traits">Traits: Empathetic, Social, Creative, Harmonious</string>
+    <string name="animal_dolphin_description">You are a Dolphin — an empathetic and creative soul who thrives in social environments. You value harmony, connection, and bring joy and optimism wherever you go. Collaboration and emotional intelligence are your strengths.</string>
+
+    <!-- Eagle -->
+    <string name="animal_eagle_name">Eagle</string>
+    <string name="animal_eagle_traits">Traits: Visionary, Strategic, Independent, Ambitious</string>
+    <string name="animal_eagle_description">You are an Eagle — a natural leader and strategic thinker with eyes set on the bigger picture. You are driven by goals, excellence, and long-term impact. Your focus and independence help you soar above challenges.</string>
+
+    <!-- Wolf -->
+    <string name="animal_wolf_name">Wolf</string>
+    <string name="animal_wolf_traits">Traits: Loyal, Protective, Introspective, Structured</string>
+    <string name="animal_wolf_description">You are a Wolf — loyal, dependable, and deeply connected to your tribe. You value trust, structure, and responsibility. While you may be cautious at first, your dedication runs deep once bonds are formed.</string>
+
+    <!-- Shark -->
+    <string name="animal_shark_name">Shark</string>
+    <string name="animal_shark_traits">Traits: Competitive, Assertive, Bold, Goal-Oriented</string>
+    <string name="animal_shark_description">You are a Shark — assertive, competitive, and results-driven. You thrive in fast-paced environments and are unafraid to take risks. Efficiency, achievement, and bold action define your approach.</string>
+
+    <string name="missed_text">Missed words: %d / 25</string>
+    <string name="quantity_selected">Words selected: %d / 25</string>
+    <string name="percentage_selected" translatable="false">%d %%</string>
+
     <string name="page_1_a">Idealist</string>
     <string name="page_1_b">Detail-oriented</string>
     <string name="page_1_c">Fun</string>
@@ -125,5 +149,14 @@
     <string name="page_25_b">Caution</string>
     <string name="page_25_c">Set</string>
     <string name="page_25_d">Competition</string>
+
+    <string name="select_one_of_the_words">Select one of the words</string>
+    <string name="behavioral_profile_result">Behavioral Profile Result</string>
+    <string name="welcome_title">Welcome to Behavioral Profile</string>
+    <string name="welcome_body_1">Behavioral Profile is an App where you can take a behavioral test and see what animals most combine with your personality.</string>
+    <string name="welcome_body_2">The test consists of 25 group of 4 words, each words has of the letters A, B, C, D right beside. You are going to have 7 seconds to choose one word, you select the word by clicking on it.</string>
+    <string name="welcome_body_3">After selecting 25 words, you will see the results and explanations about each animals</string>
+    <string name="welcome_body_4">You could take this test online, but by doing in this App, you are going to see the order of the words differently and be able to share with friends your result</string>
+    <string name="start_button_text">Start test</string>
 
 </resources>

@@ -2,6 +2,7 @@ package br.com.cosmind.app.behavioralprofile.data.repository
 
 import br.com.cosmind.app.behavioralprofile.data.database.BehavioralDao
 import br.com.cosmind.app.behavioralprofile.data.database.entity.BehavioralTestResultEntity
+import br.com.cosmind.app.behavioralprofile.domain.model.ResultModel
 import br.com.cosmind.app.behavioralprofile.domain.model.Word
 import br.com.cosmind.app.behavioralprofile.domain.model.WordPage
 import br.com.cosmind.app.behavioralprofile.domain.model.WordType
@@ -21,6 +22,8 @@ class BehavioralTestRepositoryImpl(
 
     override fun startTest(words: List<WordPage>) {
         pages = words
+        currentPage = 0
+        maxWords = words.size
         selectedWords.clear()
     }
 
@@ -28,7 +31,7 @@ class BehavioralTestRepositoryImpl(
         selectedWords.add(word)
     }
 
-    override suspend fun finishTest() {
+    override suspend fun finishTest(): ResultModel {
         val selectedByGroup = selectedWords.groupingBy { it.type }
             .eachCount()
 
@@ -44,6 +47,8 @@ class BehavioralTestRepositoryImpl(
         dao.insertResult(
             resultEntity
         )
+
+        return resultEntity.toResultModel()
     }
 
     override suspend fun isFinished(): Boolean {

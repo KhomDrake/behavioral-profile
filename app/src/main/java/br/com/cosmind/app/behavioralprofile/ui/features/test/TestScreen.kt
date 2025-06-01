@@ -12,6 +12,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.toMutableStateList
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import br.com.cosmind.app.behavioralprofile.R
@@ -29,7 +30,7 @@ fun TestScreen(
                 progress = {
                     testUiState.timeProgress
                 },
-                title = "Select one of the words",
+                title = stringResource(R.string.select_one_of_the_words),
                 modifier = Modifier.fillMaxWidth()
             )
         },
@@ -38,12 +39,12 @@ fun TestScreen(
         LazyColumn(
             modifier = Modifier
                 .padding(it),
-            contentPadding = PaddingValues(16.dp),
-            verticalArrangement = Arrangement.spacedBy(12.dp)
+            contentPadding = PaddingValues(
+                horizontal = 16.dp,
+                vertical = 24.dp
+            ),
+            verticalArrangement = Arrangement.spacedBy(24.dp)
         ) {
-            item {
-                Spacer(Modifier.padding(8.dp))
-            }
             items(testUiState.words) { word ->
                 WordUi(
                     word = word,
@@ -65,6 +66,15 @@ private fun TestScreenPreview() {
         TestScreen(
             testUiState = TestUiState(
                 words = listOf(
+                    TestUiState.WordUi(
+                        R.string.page_1_a
+                    ),
+                    TestUiState.WordUi(
+                        R.string.page_1_a
+                    ),
+                    TestUiState.WordUi(
+                        R.string.page_1_a
+                    ),
                     TestUiState.WordUi(
                         R.string.page_1_a
                     ),

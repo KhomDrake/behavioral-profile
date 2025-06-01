@@ -4,8 +4,10 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import br.com.cosmind.app.behavioralprofile.data.database.BehavioralDatabase
 import br.com.cosmind.app.behavioralprofile.data.repository.BehavioralTestRepositoryImpl
+import br.com.cosmind.app.behavioralprofile.data.repository.ResultRepositoryImpl
 import br.com.cosmind.app.behavioralprofile.data.repository.WordRepositoryImpl
 import br.com.cosmind.app.behavioralprofile.domain.repository.BehavioralTestRepository
+import br.com.cosmind.app.behavioralprofile.domain.repository.ResultRepository
 import br.com.cosmind.app.behavioralprofile.domain.repository.WordRepository
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.module.dsl.factoryOf
@@ -28,4 +30,5 @@ val dataModule = module {
     }
     singleOf(::BehavioralTestRepositoryImpl).bind<BehavioralTestRepository>()
     factoryOf(::WordRepositoryImpl).bind<WordRepository>()
+    factoryOf(::ResultRepositoryImpl).bind<ResultRepository>()
 }

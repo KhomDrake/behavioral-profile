@@ -6,7 +6,5 @@ class FinishTestUseCase(
     private val repository: BehavioralTestRepository
 ) {
 
-    suspend fun invoke() {
-        repository.finishTest()
-    }
+    suspend fun invoke() = repository.finishTest()
 }

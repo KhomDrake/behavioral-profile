@@ -2,11 +2,13 @@ package br.com.cosmind.app.behavioralprofile.ui.features.test
 
 import androidx.annotation.StringRes
 import androidx.compose.runtime.snapshots.SnapshotStateList
+import br.com.cosmind.app.behavioralprofile.domain.model.ResultModel
 import br.com.cosmind.app.behavioralprofile.domain.model.WordType
 
 data class TestUiState(
     val words: SnapshotStateList<WordUi>,
     val timeProgress: Float = 0.0f,
+    val resultModel: ResultModel? = null
 ) {
     data class WordUi(
         @StringRes

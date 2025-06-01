@@ -1,6 +1,29 @@
 <resources>
     <string name="app_name">Perfil Comportamental</string>
 
+    <!-- Golfinho -->
+    <string name="animal_dolphin_name">Golfinho</string>
+    <string name="animal_dolphin_traits">Características: Empático, Sociável, Criativo, Harmônico</string>
+    <string name="animal_dolphin_description">Você é um Golfinho — uma alma empática e criativa que prospera em ambientes sociais. Você valoriza a harmonia, a conexão e traz alegria e otimismo por onde passa. Colaboração e inteligência emocional são os seus pontos fortes.</string>
+
+    <!-- Águia -->
+    <string name="animal_eagle_name">Águia</string>
+    <string name="animal_eagle_traits">Características: Visionário, Estratégico, Independente, Ambicioso</string>
+    <string name="animal_eagle_description">Você é uma Águia — um líder nato e pensador estratégico com os olhos voltados para o futuro. É motivado por metas, excelência e impacto duradouro. Seu foco e independência ajudam você a superar os desafios.</string>
+
+    <!-- Lobo -->
+    <string name="animal_wolf_name">Lobo</string>
+    <string name="animal_wolf_traits">Características: Leal, Protetor, Introspectivo, Estruturado</string>
+    <string name="animal_wolf_description">Você é um Lobo — leal, confiável e profundamente conectado à sua “matilha”. Você valoriza a confiança, a estrutura e a responsabilidade. Embora seja cauteloso no início, sua dedicação é profunda uma vez que os laços são formados.</string>
+
+    <!-- Tubarão -->
+    <string name="animal_shark_name">Tubarão</string>
+    <string name="animal_shark_traits">Características: Competitivo, Assertivo, Ousado, Focado em Resultados</string>
+    <string name="animal_shark_description">Você é um Tubarão — assertivo, competitivo e orientado a resultados. Você prospera em ambientes dinâmicos e não tem medo de correr riscos. Eficiência, conquista e ação ousada definem sua forma de agir.</string>
+
+    <string name="missed_text">Palavras não selecionadas: %d/25</string>
+    <string name="quantity_selected">Palavras selecionadas: %d / 25</string>
+
     <string name="page_1_a">Idealista</string>
     <string name="page_1_b">Detalhista</string>
     <string name="page_1_c">Diversão</string>
@@ -125,5 +148,14 @@
     <string name="page_25_b">Cautela</string>
     <string name="page_25_c">Conjunto</string>
     <string name="page_25_d">Competição</string>
+
+    <string name="select_one_of_the_words">Selecione uma palavra</string>
+    <string name="behavioral_profile_result">Resultado do Perfil Comportamental</string>
+    <string name="welcome_title">Bem-vindo ao Perfil Comportamental</string>
+    <string name="welcome_body_1">Perfil Comportamental é um aplicativo onde você pode fazer um teste comportamental e ver quais animais mais combinam com sua personalidade.</string>
+    <string name="welcome_body_2">O teste consiste em 25 grupos de 4 palavras, cada palavra possui as letras A, B, C, D ao lado. Você terá 7 segundos para escolher uma palavra, você seleciona a palavra clicando nela.</string>
+    <string name="welcome_body_3">Após selecionar 25 palavras, você verá os resultados e explicações sobre cada animal.</string>
+    <string name="welcome_body_4">Você poderia fazer este teste online, mas ao fazê-lo neste aplicativo, você verá a ordem das palavras de forma diferente e poderá compartilhar seu resultado com amigos.</string>
+    <string name="start_button_text">Iniciar teste</string>
 
 </resources>
