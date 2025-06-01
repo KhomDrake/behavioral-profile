@@ -59,8 +59,8 @@ class TestViewModel(
         timeJob?.cancel()
         timeJob = viewModelScope.launch {
             val page = getNextPageUseCase.invoke() ?: return@launch run {
+                timeJob?.cancel()
                 finishTestUseCase.invoke()
-
             }
 
             val words = page.words.map { word ->
@@ -68,7 +68,7 @@ class TestViewModel(
                     wordType = word.type,
                     name = word.name
                 )
-            }?.toMutableStateList() ?: mutableStateListOf()
+            }.toMutableStateList()
 
             _state.update {
                 it.copy(
@@ -77,19 +77,22 @@ class TestViewModel(
                 )
             }
 
-            var finishTime = System.currentTimeMillis() + 5.seconds.inWholeSeconds
+            val pageDisplayDurationMillis = 5.seconds.inWholeMilliseconds
+            val startTimeMillis = System.currentTimeMillis()
 
-            while (System.currentTimeMillis() < finishTime && isActive) {
-                val progress = (finishTime - System.currentTimeMillis())/5.seconds.inWholeSeconds
-                delay(100)
+            while (System.currentTimeMillis() < startTimeMillis + pageDisplayDurationMillis && isActive) {
+                delay(50)
+                val elapsedTimeMillis = System.currentTimeMillis() - startTimeMillis
+                val progress = 1.0f - (elapsedTimeMillis.toFloat() / pageDisplayDurationMillis)
                 _state.update {
                     it.copy(
-                        timeProgress = progress.toFloat()
+                        timeProgress = progress.coerceIn(0f, 1f) // Ensure progress is between 0 and 1
                     )
                 }
             }
 
-            if(isActive) {
+            // After the page display duration, if the coroutine is still active, load the next page
+            if (isActive) {
                 loadNextPage()
             }
         }
@@ -101,7 +104,5 @@ class TestViewModel(
             selectWordUseCase.invoke(wordType = word.wordType)
             loadNextPage()
         }
-
     }
-
 }

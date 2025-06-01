@@ -1,0 +1,129 @@
+<resources>
+    <string name="app_name">Perfil Comportamental</string>
+
+    <string name="page_1_a">Idealista</string>
+    <string name="page_1_b">Detalhista</string>
+    <string name="page_1_c">Diversão</string>
+    <string name="page_1_d">Persistência</string>
+
+    <string name="page_2_a">Inovação</string>
+    <string name="page_2_b">Organização</string>
+    <string name="page_2_c">Integração</string>
+    <string name="page_2_d">Execução</string>
+
+    <string name="page_3_a">Atencipação</string>
+    <string name="page_3_b">Regras</string>
+    <string name="page_3_c">Acordo</string>
+    <string name="page_3_d">Persistência</string>
+
+    <string name="page_4_a">Complexidade</string>
+    <string name="page_4_b">Interatividade</string>
+    <string name="page_4_c">Diversão</string>
+    <string name="page_4_d">Objetividade</string>
+
+    <string name="page_5_a">Curiosidade</string>
+    <string name="page_5_b">Planejamento</string>
+    <string name="page_5_c">Relacionamento</string>
+    <string name="page_5_d">Direção</string>
+
+    <string name="page_6_a">Questionamento</string>
+    <string name="page_6_b">Detalhamento</string>
+    <string name="page_6_c">Participação</string>
+    <string name="page_6_d">Impulsividade</string>
+
+    <string name="page_7_a">Descobertas</string>
+    <string name="page_7_b">Previsão</string>
+    <string name="page_7_c">Naturalidade</string>
+    <string name="page_7_d">Determinação</string>
+
+    <string name="page_8_a">Irrelevância</string>
+    <string name="page_8_b">Dever</string>
+    <string name="page_8_c">Socialização</string>
+    <string name="page_8_d">Facilidade</string>
+
+    <string name="page_9_a">Liberdade</string>
+    <string name="page_9_b">Controle</string>
+    <string name="page_9_c">Compreensão</string>
+    <string name="page_9_d">Paciência</string>
+
+    <string name="page_10_a">Revolução</string>
+    <string name="page_10_b">Lógica</string>
+    <string name="page_10_c">Tradição</string>
+    <string name="page_10_d">Quantidade</string>
+
+    <string name="page_11_a">Escolha</string>
+    <string name="page_11_b">Melhoria</string>
+    <string name="page_11_c">Lazer</string>
+    <string name="page_11_d">Autonomia</string>
+
+    <string name="page_12_a">Independência</string>
+    <string name="page_12_b">Acúmulo</string>
+    <string name="page_12_c">Assistência</string>
+    <string name="page_12_d">Empreendimento</string>
+
+    <string name="page_13_a">Aventura</string>
+    <string name="page_13_b">Ordem</string>
+    <string name="page_13_c">Cooperação</string>
+    <string name="page_13_d">Execução</string>
+
+    <string name="page_14_a">Criatividade</string>
+    <string name="page_14_b">Pontualidade</string>
+    <string name="page_14_c">Parceria</string>
+    <string name="page_14_d">Vantagem</string>
+
+    <string name="page_15_a">Adaptação</string>
+    <string name="page_15_b">Consistência</string>
+    <string name="page_15_c">Equipe</string>
+    <string name="page_15_d">Líder</string>
+
+    <string name="page_16_a">Desafio</string>
+    <string name="page_16_b">Estratégia</string>
+    <string name="page_16_c">Percurso</string>
+    <string name="page_16_d">Chegada</string>
+
+    <string name="page_17_a">Novidade</string>
+    <string name="page_17_b">Controle</string>
+    <string name="page_17_c">Solidariedade</string>
+    <string name="page_17_d">Atuação</string>
+
+    <string name="page_18_a">Desconfiança</string>
+    <string name="page_18_b">Prevenção</string>
+    <string name="page_18_c">União</string>
+    <string name="page_18_d">Ataque</string>
+
+    <string name="page_19_a">Mudança</string>
+    <string name="page_19_b">Rotina</string>
+    <string name="page_19_c">Amizade</string>
+    <string name="page_19_d">Produtividade</string>
+
+    <string name="page_20_a">Mistério</string>
+    <string name="page_20_b">Compensação</string>
+    <string name="page_20_c">Reencontro</string>
+    <string name="page_20_d">Pressa</string>
+
+    <string name="page_21_a">Indiferença</string>
+    <string name="page_21_b">Perfeição</string>
+    <string name="page_21_c">Envolvimento</string>
+    <string name="page_21_d">Foco</string>
+
+    <string name="page_22_a">Eficácia</string>
+    <string name="page_22_b">Perícia</string>
+    <string name="page_22_c">Experiência</string>
+    <string name="page_22_d">Sucesso</string>
+
+    <string name="page_23_a">Distração</string>
+    <string name="page_23_b">Progressão</string>
+    <string name="page_23_c">Justiça</string>
+    <string name="page_23_d">Firmeza</string>
+
+    <string name="page_24_a">Polêmica</string>
+    <string name="page_24_b">Prudência</string>
+    <string name="page_24_c">Coletividade</string>
+    <string name="page_24_d">Insistência</string>
+
+    <string name="page_25_a">Diversidade</string>
+    <string name="page_25_b">Cautela</string>
+    <string name="page_25_c">Conjunto</string>
+    <string name="page_25_d">Competição</string>
+
+</resources>

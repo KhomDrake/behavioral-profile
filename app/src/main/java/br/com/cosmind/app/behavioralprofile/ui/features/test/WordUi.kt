@@ -10,8 +10,10 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
+import br.com.cosmind.app.behavioralprofile.R
 import br.com.cosmind.app.behavioralprofile.domain.model.WordType
 import br.com.cosmind.app.behavioralprofile.ui.theme.BehavioralProfileTheme
 
@@ -30,7 +32,7 @@ fun WordUi(
             .padding(8.dp)
     ) {
         Text(
-            word.name,
+            text = stringResource(id = word.name),
             style = MaterialTheme.typography.titleMedium,
             color = MaterialTheme.colorScheme.onPrimaryContainer,
             modifier = Modifier
@@ -65,7 +67,7 @@ private fun WordUiPreview() {
         ) {
             WordUi(
                 word = TestUiState.WordUi(
-                    "Creation",
+                    R.string.page_1_b,
                     WordType.A
                 ),
                 modifier = Modifier.fillMaxWidth()

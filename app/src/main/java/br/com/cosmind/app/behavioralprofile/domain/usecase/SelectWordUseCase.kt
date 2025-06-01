@@ -11,7 +11,7 @@ class SelectWordUseCase(
     suspend fun invoke(wordType: WordType) {
         repository.selectWord(
             Word(
-                name = "",
+                name = 0,
                 type = wordType
             )
         )

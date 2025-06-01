@@ -14,6 +14,7 @@ import androidx.compose.runtime.toMutableStateList
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
+import br.com.cosmind.app.behavioralprofile.R
 import br.com.cosmind.app.behavioralprofile.ui.theme.BehavioralProfileTheme
 
 @Composable
@@ -65,7 +66,7 @@ private fun TestScreenPreview() {
             testUiState = TestUiState(
                 words = listOf(
                     TestUiState.WordUi(
-                        "Abc"
+                        R.string.page_1_a
                     ),
                 ).toMutableStateList(),
                 timeProgress = 0.5f

@@ -51,7 +51,7 @@ class BehavioralTestRepositoryImpl(
     }
 
     override suspend fun nextPage(): WordPage? {
-        val page = pages[currentPage]
+        val page = pages.getOrNull(currentPage)
         currentPage++
         return page
     }

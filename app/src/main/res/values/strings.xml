@@ -1,3 +1,129 @@
 <resources>
-    <string name="app_name">behavioral-profile</string>
+    <string name="app_name">Behavioral Profile</string>
+
+    <string name="page_1_a">Idealist</string>
+    <string name="page_1_b">Detail-oriented</string>
+    <string name="page_1_c">Fun</string>
+    <string name="page_1_d">Persistence</string>
+
+    <string name="page_2_a">Innovation</string>
+    <string name="page_2_b">Organization</string>
+    <string name="page_2_c">Integration</string>
+    <string name="page_2_d">Execution</string>
+
+    <string name="page_3_a">Anticipation</string>
+    <string name="page_3_b">Rules</string>
+    <string name="page_3_c">Agreement</string>
+    <string name="page_3_d">Persistence</string>
+
+    <string name="page_4_a">Complexity</string>
+    <string name="page_4_b">Interactivity</string>
+    <string name="page_4_c">Fun</string>
+    <string name="page_4_d">Objectivity</string>
+
+    <string name="page_5_a">Curiosity</string>
+    <string name="page_5_b">Planning</string>
+    <string name="page_5_c">Relationship</string>
+    <string name="page_5_d">Direction</string>
+
+    <string name="page_6_a">Questioning</string>
+    <string name="page_6_b">Detailing</string>
+    <string name="page_6_c">Participation</string>
+    <string name="page_6_d">Impulsiveness</string>
+
+    <string name="page_7_a">Discoveries</string>
+    <string name="page_7_b">Forecast</string>
+    <string name="page_7_c">Naturalness</string>
+    <string name="page_7_d">Determination</string>
+
+    <string name="page_8_a">Irrelevance</string>
+    <string name="page_8_b">Duty</string>
+    <string name="page_8_c">Socialization</string>
+    <string name="page_8_d">Ease</string>
+
+    <string name="page_9_a">Freedom</string>
+    <string name="page_9_b">Control</string>
+    <string name="page_9_c">Understanding</string>
+    <string name="page_9_d">Patience</string>
+
+    <string name="page_10_a">Revolution</string>
+    <string name="page_10_b">Logic</string>
+    <string name="page_10_c">Tradition</string>
+    <string name="page_10_d">Quantity</string>
+
+    <string name="page_11_a">Choice</string>
+    <string name="page_11_b">Improvement</string>
+    <string name="page_11_c">Leisure</string>
+    <string name="page_11_d">Autonomy</string>
+
+    <string name="page_12_a">Independence</string>
+    <string name="page_12_b">Accumulation</string>
+    <string name="page_12_c">Assistance</string>
+    <string name="page_12_d">Undertaking</string>
+
+    <string name="page_13_a">Adventure</string>
+    <string name="page_13_b">Order</string>
+    <string name="page_13_c">Cooperation</string>
+    <string name="page_13_d">Execution</string>
+
+    <string name="page_14_a">Creativity</string>
+    <string name="page_14_b">Punctuality</string>
+    <string name="page_14_c">Partnership</string>
+    <string name="page_14_d">Advantage</string>
+
+    <string name="page_15_a">Adaptation</string>
+    <string name="page_15_b">Consistency</string>
+    <string name="page_15_c">Team</string>
+    <string name="page_15_d">Leader</string>
+
+    <string name="page_16_a">Challenge</string>
+    <string name="page_16_b">Strategy</string>
+    <string name="page_16_c">Journey</string>
+    <string name="page_16_d">Arrival</string>
+
+    <string name="page_17_a">Novelty</string>
+    <string name="page_17_b">Control</string>
+    <string name="page_17_c">Solidarity</string>
+    <string name="page_17_d">Action</string>
+
+    <string name="page_18_a">Distrust</string>
+    <string name="page_18_b">Prevention</string>
+    <string name="page_18_c">Union</string>
+    <string name="page_18_d">Attack</string>
+
+    <string name="page_19_a">Change</string>
+    <string name="page_19_b">Routine</string>
+    <string name="page_19_c">Friendship</string>
+    <string name="page_19_d">Productivity</string>
+
+    <string name="page_20_a">Mystery</string>
+    <string name="page_20_b">Compensation</string>
+    <string name="page_20_c">Reunion</string>
+    <string name="page_20_d">Haste</string>
+
+    <string name="page_21_a">Indifference</string>
+    <string name="page_21_b">Perfection</string>
+    <string name="page_21_c">Involvement</string>
+    <string name="page_21_d">Focus</string>
+
+    <string name="page_22_a">Effectiveness</string>
+    <string name="page_22_b">Expertise</string>
+    <string name="page_22_c">Experience</string>
+    <string name="page_22_d">Success</string>
+
+    <string name="page_23_a">Distraction</string>
+    <string name="page_23_b">Progression</string>
+    <string name="page_23_c">Justice</string>
+    <string name="page_23_d">Firmness</string>
+
+    <string name="page_24_a">Controversy</string>
+    <string name="page_24_b">Prudence</string>
+    <string name="page_24_c">Collectivity</string>
+    <string name="page_24_d">Insistence</string>
+
+    <string name="page_25_a">Diversity</string>
+    <string name="page_25_b">Caution</string>
+    <string name="page_25_c">Set</string>
+    <string name="page_25_d">Competition</string>
+
 </resources>

@@ -1,6 +1,7 @@
 package br.com.cosmind.app.behavioralprofile.di
 
 import androidx.room.Room
+import androidx.room.RoomDatabase
 import br.com.cosmind.app.behavioralprofile.data.database.BehavioralDatabase
 import br.com.cosmind.app.behavioralprofile.data.repository.BehavioralTestRepositoryImpl
 import br.com.cosmind.app.behavioralprofile.data.repository.WordRepositoryImpl
@@ -21,6 +22,9 @@ val dataModule = module {
         )
             .fallbackToDestructiveMigration(true)
             .build()
+    }
+    single {
+        get<BehavioralDatabase>().behavioralTestDao()
     }
     singleOf(::BehavioralTestRepositoryImpl).bind<BehavioralTestRepository>()
     factoryOf(::WordRepositoryImpl).bind<WordRepository>()
