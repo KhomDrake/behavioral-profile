@@ -39,7 +39,7 @@ fun WordUi(
         )
         if(showLetter) {
             Text(
-                word.letter,
+                word.wordType.name,
                 style = MaterialTheme.typography.titleLarge,
                 color = MaterialTheme.colorScheme.onPrimary,
                 modifier = Modifier
@@ -66,7 +66,7 @@ private fun WordUiPreview() {
             WordUi(
                 word = TestUiState.WordUi(
                     "Creation",
-                    WordType.A.name
+                    WordType.A
                 ),
                 modifier = Modifier.fillMaxWidth()
             )
