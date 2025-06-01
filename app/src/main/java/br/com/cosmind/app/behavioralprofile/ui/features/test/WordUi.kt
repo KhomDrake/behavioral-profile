@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
+import br.com.cosmind.app.behavioralprofile.domain.model.WordType
 import br.com.cosmind.app.behavioralprofile.ui.theme.BehavioralProfileTheme
 
 @Composable
@@ -65,7 +66,7 @@ private fun WordUiPreview() {
             WordUi(
                 word = TestUiState.WordUi(
                     "Creation",
-                    "A"
+                    WordType.A.name
                 ),
                 modifier = Modifier.fillMaxWidth()
             )

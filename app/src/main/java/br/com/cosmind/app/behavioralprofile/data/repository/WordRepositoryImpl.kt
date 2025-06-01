@@ -1,4 +1,4 @@
-package br.com.cosmind.app.behavioralprofile.data
+package br.com.cosmind.app.behavioralprofile.data.repository
 
 import br.com.cosmind.app.behavioralprofile.domain.model.Word
 import br.com.cosmind.app.behavioralprofile.domain.model.WordPage

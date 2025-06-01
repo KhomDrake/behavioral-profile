@@ -16,11 +16,10 @@ import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import br.com.cosmind.app.behavioralprofile.ui.theme.BehavioralProfileTheme
 
-
-
 @Composable
 fun TestScreen(
     testUiState: TestUiState,
+    handleEvent: (TestUiEvent) -> Unit,
     modifier: Modifier = Modifier
 ) {
     Scaffold(
@@ -32,7 +31,8 @@ fun TestScreen(
                 title = "Select one of the words",
                 modifier = Modifier.fillMaxWidth()
             )
-        }
+        },
+        modifier = modifier
     ) {
         LazyColumn(
             modifier = Modifier
@@ -49,7 +49,7 @@ fun TestScreen(
                     modifier = Modifier
                         .fillMaxWidth()
                         .clickable {
-
+                            handleEvent.invoke(TestUiEvent.SelectWord(word))
                         }
                 )
             }
@@ -65,12 +65,12 @@ private fun TestScreenPreview() {
             testUiState = TestUiState(
                 words = listOf(
                     TestUiState.WordUi(
-                        "Abc",
-                        "A"
+                        "Abc"
                     ),
                 ).toMutableStateList(),
                 timeProgress = 0.5f
-            )
+            ),
+            handleEvent = {}
         )
     }
 }
