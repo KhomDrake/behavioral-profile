@@ -19,6 +19,7 @@ import br.com.cosmind.app.behavioralprofile.ui.theme.BehavioralProfileTheme
 
 @Composable
 fun HomeScreen(
+    startTest: () -> Unit = {}
 ) {
     Column(
         modifier = Modifier
@@ -68,7 +69,7 @@ fun HomeScreen(
         Spacer(Modifier.size(24.dp))
         Button(
             onClick = {
-
+                startTest()
             },
             content = {
                 Text(

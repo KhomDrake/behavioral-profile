@@ -55,30 +55,8 @@ class MainActivity : ComponentActivity() {
 fun BehavioralProfileApp() {
     val navController = rememberNavController()
 
-    val navBackStackEntry by navController.currentBackStackEntryAsState()
-    val currentDestination = navBackStackEntry?.destination
-
-    NavigationSuite(
-        currentDestination?.route ?: "",
-        onClick = { destination ->
-            if (currentDestination?.route != destination.route) {
-                navController.navigate(destination.route) {
-                    popUpTo(navController.graph.startDestinationId) {
-                        saveState = true
-                    }
-                    launchSingleTop = true
-                    restoreState = true
-                }
-            }
-        },
-        content = {
-            Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                BehavioralProfileNavHost(
-                    navController,
-                    innerPadding
-                )
-            }
-        }
+    BehavioralProfileNavHost(
+        navController
     )
 }
 

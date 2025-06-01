@@ -7,6 +7,12 @@ sealed interface Route {
     val route: String
 
     @Serializable
+    data object Suite: Route {
+        override val route: String
+            get() = "Suite"
+    }
+
+    @Serializable
     data object Home: Route {
         override val route: String
             get() = "Home"
@@ -19,6 +25,10 @@ sealed interface Route {
     }
 
     @Serializable
-    data object BehavioralTest
+    data object BehavioralTest: Route {
+        override val route: String
+            get() = "BehavioralTest"
+
+    }
 }
 

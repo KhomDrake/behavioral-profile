@@ -42,7 +42,8 @@ fun NavigationSuite(
     currentDestination: String,
     content: @Composable () -> Unit,
     onClick: (AppDestinations) -> Unit,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    showItems: Boolean = true
 ) {
     val colors = NavigationSuiteDefaults.itemColors(
         navigationRailItemColors = NavigationRailItemDefaults.colors(
@@ -70,25 +71,27 @@ fun NavigationSuite(
 
     NavigationSuiteScaffold(
         navigationSuiteItems = {
-            AppDestinations.entries.forEach { destination ->
-                item(
-                    icon = {
-                        Icon(
-                            destination.icon,
-                            contentDescription = destination.label
-                        )
-                    },
-                    label = {
-                        Text(
-                            destination.label
-                        )
-                    },
-                    selected = currentDestination == destination.route,
-                    onClick = {
-                        onClick.invoke(destination)
-                    },
-                    colors = colors
-                )
+            if(showItems) {
+                AppDestinations.entries.forEach { destination ->
+                    item(
+                        icon = {
+                            Icon(
+                                destination.icon,
+                                contentDescription = destination.label
+                            )
+                        },
+                        label = {
+                            Text(
+                                destination.label
+                            )
+                        },
+                        selected = currentDestination == destination.route,
+                        onClick = {
+                            onClick.invoke(destination)
+                        },
+                        colors = colors
+                    )
+                }
             }
         },
         modifier = modifier,
