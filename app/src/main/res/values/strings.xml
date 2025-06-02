@@ -152,6 +152,7 @@
 
     <string name="select_one_of_the_words">Select one of the words</string>
     <string name="behavioral_profile_result">Behavioral Profile Result</string>
+    <string name="history_title">History</string>
     <string name="welcome_title">Welcome to Behavioral Profile</string>
     <string name="welcome_body_1">Behavioral Profile is an App where you can take a behavioral test and see what animals most combine with your personality.</string>
     <string name="welcome_body_2">The test consists of 25 group of 4 words, each words has of the letters A, B, C, D right beside. You are going to have 7 seconds to choose one word, you select the word by clicking on it.</string>

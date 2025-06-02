@@ -1,5 +1,7 @@
 package br.com.cosmind.app.behavioralprofile.domain.model
 
+import kotlin.math.max
+
 
 data class ResultModel(
     val id: Long,
@@ -10,6 +12,15 @@ data class ResultModel(
     val date: String,
     val name: String? = null
 ) {
+    val highest: WordType
+        get() = listOf(
+            Pair(quantityA, WordType.A),
+            Pair(quantityB, WordType.B),
+            Pair(quantityC, WordType.C),
+            Pair(quantityD, WordType.D),
+        )
+            .maxBy { it.first }.second
+
     val total: Int
         get() = quantityA + quantityB + quantityC + quantityD
 

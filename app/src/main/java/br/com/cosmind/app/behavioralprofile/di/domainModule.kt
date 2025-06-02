@@ -2,6 +2,7 @@ package br.com.cosmind.app.behavioralprofile.di
 
 import br.com.cosmind.app.behavioralprofile.domain.usecase.FinishTestUseCase
 import br.com.cosmind.app.behavioralprofile.domain.usecase.GetNextPageUseCase
+import br.com.cosmind.app.behavioralprofile.domain.usecase.GetResultHistoryUseCase
 import br.com.cosmind.app.behavioralprofile.domain.usecase.SelectWordUseCase
 import br.com.cosmind.app.behavioralprofile.domain.usecase.StartTestUseCase
 import org.koin.core.module.dsl.factoryOf
@@ -12,4 +13,5 @@ val domainModule = module {
     factoryOf(::StartTestUseCase)
     factoryOf(::SelectWordUseCase)
     factoryOf(::GetNextPageUseCase)
+    factoryOf(::GetResultHistoryUseCase)
 }

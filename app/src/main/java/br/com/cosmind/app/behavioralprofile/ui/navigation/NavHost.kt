@@ -52,7 +52,10 @@ fun BehavioralProfileNavHost(
                 testUiState = state,
                 handleEvent = viewModel::handleEvent,
                 modifier = Modifier
-                    .fillMaxSize()
+                    .fillMaxSize(),
+                onBackClick = {
+                    navController.navigateUp()
+                }
             )
         }
         composable<Route.Result> { backStackEntry ->

@@ -22,7 +22,8 @@ import br.com.cosmind.app.behavioralprofile.ui.theme.BehavioralProfileTheme
 fun TestScreen(
     testUiState: TestUiState,
     handleEvent: (TestUiEvent) -> Unit,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    onBackClick: () -> Unit = {}
 ) {
     Scaffold(
         topBar = {
@@ -31,7 +32,10 @@ fun TestScreen(
                     testUiState.timeProgress
                 },
                 title = stringResource(R.string.select_one_of_the_words),
-                modifier = Modifier.fillMaxWidth()
+                modifier = Modifier.fillMaxWidth(),
+                onBackClick = {
+                    onBackClick.invoke()
+                }
             )
         },
         modifier = modifier

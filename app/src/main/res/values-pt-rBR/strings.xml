@@ -151,6 +151,7 @@
 
     <string name="select_one_of_the_words">Selecione uma palavra</string>
     <string name="behavioral_profile_result">Resultado do Perfil Comportamental</string>
+    <string name="history_title">Histórico</string>
     <string name="welcome_title">Bem-vindo ao Perfil Comportamental</string>
     <string name="welcome_body_1">Perfil Comportamental é um aplicativo onde você pode fazer um teste comportamental e ver quais animais mais combinam com sua personalidade.</string>
     <string name="welcome_body_2">O teste consiste em 25 grupos de 4 palavras, cada palavra possui as letras A, B, C, D ao lado. Você terá 7 segundos para escolher uma palavra, você seleciona a palavra clicando nela.</string>
