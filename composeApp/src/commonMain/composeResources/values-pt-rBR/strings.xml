@@ -21,8 +21,8 @@
     <string name="animal_shark_traits">Características: Competitivo, Assertivo, Ousado, Focado em Resultados</string>
     <string name="animal_shark_description">Você é um Tubarão — assertivo, competitivo e orientado a resultados. Você prospera em ambientes dinâmicos e não tem medo de correr riscos. Eficiência, conquista e ação ousada definem sua forma de agir.</string>
 
-    <string name="missed_text">Palavras não selecionadas: %d/25</string>
-    <string name="quantity_selected">Palavras selecionadas: %d / 25</string>
+    <string name="missed_text">Palavras não selecionadas: %1$d/25</string>
+    <string name="quantity_selected">Palavras selecionadas: %1$d / 25</string>
 
     <string name="page_1_a">Idealista</string>
     <string name="page_1_b">Detalhista</string>

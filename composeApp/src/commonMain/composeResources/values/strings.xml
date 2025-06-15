@@ -21,9 +21,9 @@
     <string name="animal_shark_traits">Traits: Competitive, Assertive, Bold, Goal-Oriented</string>
     <string name="animal_shark_description">You are a Shark — assertive, competitive, and results-driven. You thrive in fast-paced environments and are unafraid to take risks. Efficiency, achievement, and bold action define your approach.</string>
 
-    <string name="missed_text">Missed words: %d / 25</string>
-    <string name="quantity_selected">Words selected: %d / 25</string>
-    <string name="percentage_selected" translatable="false">%d %%</string>
+    <string name="missed_text">Missed words: %1$d / 25</string>
+    <string name="quantity_selected">Words selected: %1$d / 25</string>
+    <string name="percentage_selected" translatable="false">%1$d %</string>
 
     <string name="page_1_a">Idealist</string>
     <string name="page_1_b">Detail-oriented</string>
