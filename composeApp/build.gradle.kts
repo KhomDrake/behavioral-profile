@@ -42,8 +42,8 @@ kotlin {
             implementation(libs.androidx.activity.compose)
             implementation(libs.koin.android)
             implementation(libs.koin.androidx.compose)
-            implementation("androidx.compose.material3:material3-adaptive-navigation-suite-android:1.3.2")
-            implementation("androidx.compose.material3:material3-adaptive-navigation-suite:1.3.2")
+            implementation(libs.androidx.navigation.suite)
+            implementation(libs.androidx.navigation.suite.android)
         }
         commonMain.dependencies {
             implementation(libs.kotlin.datetime)
@@ -55,7 +55,7 @@ kotlin {
             implementation(compose.components.uiToolingPreview)
             implementation(libs.androidx.lifecycle.viewmodel)
             implementation(libs.androidx.lifecycle.runtimeCompose)
-            implementation("org.jetbrains.compose.material:material-icons-extended:1.7.3")
+            implementation(libs.jetbrains.material.icons.extended)
 
             implementation(libs.sqlite.bundled)
             implementation(libs.koin.compose)
