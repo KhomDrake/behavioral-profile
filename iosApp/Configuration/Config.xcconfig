@@ -1,0 +1,7 @@
+TEAM_ID=
+
+PRODUCT_NAME=behavioralprofile
+PRODUCT_BUNDLE_IDENTIFIER=br.com.cosmind.app.behavioralprofile.behavioralprofile$(TEAM_ID)
+
+CURRENT_PROJECT_VERSION=1
+MARKETING_VERSION=0.1-alpha
