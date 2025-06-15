@@ -6,12 +6,11 @@ The test shows 25 groups of four words and in the end, you count how many of eac
 
 I've found this test very interesting and because I wanted to learn more about Compose Multiplatform(CMP), that's I decided to write this project. 
 
-To better understand CMP, I've first wrote the App using Compose for Android, that's the code in the main branch and then created branch called cmp, where I changed the code to also work for iOS. The idea with this is to understand how many things I would have to change if I had another project using Compose for Android and wanted to change to use CMP.
+To better understand CMP, I've first wrote the App using Compose for Android, that's the code in the main branch and then I created a branch called cmp, where I've changed the code to also work for iOS. The idea with this is to understand how many things I would have to change if I had another project using Compose for Android and wanted to change to use CMP.
 
 ## Platforms
 
 Currenlty, just Android and iOS, but I plan in the future to add Desktop and Web.
-
 
 
 ## Tech Stack & Libraries
